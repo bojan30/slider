@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#slider{
+    margin: auto;
+    width: 70%;
+    position: relative;
+}
+.slider-images{
+    width: 100%;
+}
+#left,#right{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70px;
+    cursor: pointer;
+    z-index: 10;
+}
+#left{
+    left: 30px;
+}
+#right{
+    right: 30px;
+}
+#left img, #right img{
+    height: 100%;
+}
+
+.active{
+    animation: fadeIn 0.7s linear forwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} 
+
